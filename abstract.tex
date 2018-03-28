@@ -1,0 +1,44 @@
+\documentclass[12pt,a4paper,notitlepage,english]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+
+\usepackage{fullpage}
+
+\begin{document}
+
+\title{A mixed-order isogeometry solver for poroelasticity problems}
+\author{
+  E. Fonn
+  \thanks{\texttt{eivind.fonn@sintef.no}}
+  \thanks{Applied Mathematics, SINTEF ICT, Strindvegen 4, 7034 Trondheim, Norway}
+  \and
+  Y. W. Bekele
+  \thanks{Department of Civil and Transport Engineering, NTNU}
+  \and
+  T. Kvamsdal
+  \thanks{Department of Mathematical Sciences, NTNU}
+  \and
+  A. M. Kvarving \footnotemark[2]
+  \and
+  S. Nordal \footnotemark[3]
+}
+
+\pagenumbering{gobble}
+\maketitle
+
+\abstract{
+  Isogeometric methods for solving poroelasticity problems was first introduced in 2013 by Irzal
+  et. al. \cite{Irzal2013ife}, which highlighted the advantages of smooth basis functions using
+  equal polynomial orders for both displacement and pore pressure.  We present here a mixed-order
+  formulation where the pore pressure has reduced order, with the aim of obtaining a method which is
+  more stable for small timesteps, and which can avoid the pressure oscillations plaguing more
+  conventional equal-order methods.  Results from one- and two-dimensional consolidation problems
+  are shown.
+}
+
+\bibliography{common/references}
+\bibliographystyle{naturemag}
+
+\end{document}
